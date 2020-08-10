@@ -36,5 +36,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "@babel/types": "^7.11.0"
   }
 }
