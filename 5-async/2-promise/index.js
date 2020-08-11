@@ -7,7 +7,7 @@ function fetchData(url) {
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status >= 200 && xhr.status < 300) {
-          resolve(xhr);
+          resolve(xhr.responseTxt);
         } else if (xhr.status < 200 || xhr.status >= 300) {
           reject(xhr);
         }
